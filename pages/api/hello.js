@@ -20,7 +20,7 @@ const connect = async () => {
       pool.getConnection(function (err, connection) {
         if (err) throw err; // not connected!
         connection.query(
-          'SELECT * FROM users',
+          "INSERT into `users` VALUES(NULL,'Added New Name')",
           function (error, results, fields) {
             connection.release();
             console.log(results);
