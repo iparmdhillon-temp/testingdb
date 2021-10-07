@@ -3,7 +3,7 @@ const path = require('path');
 const configDirectory = path.resolve(process.cwd(), 'config');
 var mysql = require('mysql');
 var pool = mysql.createPool({
-  connectionLimit: 150,
+  connectionLimit: 4425,
   host: 'db-mysql-nyc1-72197-do-user-9969707-0.b.db.ondigitalocean.com',
   database: 'defaultdb',
   user: 'doadmin',
