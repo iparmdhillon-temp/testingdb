@@ -1,7 +1,15 @@
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.css';
+import Head from '../components/head';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head title="Hello App">
+        <meta name="viewport" content="viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
